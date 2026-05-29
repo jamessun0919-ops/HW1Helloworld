@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="James Sun 個人網站 - 展示時間與個人資訊">
+    <title>James Sun | Personal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Animated background particles -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Floating orbs -->
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+
+    <main class="container">
+        <!-- Greeting badge -->
+        <div class="badge" id="greeting-badge">
+            <span class="badge-dot"></span>
+            <span id="greeting-text">Hello</span>
+        </div>
+
+        <!-- Name section -->
+        <h1 class="name">
+            <span class="name-first" data-text="James">James</span>
+            <span class="name-last" data-text="Sun">Sun</span>
+        </h1>
+
+        <p class="subtitle">Welcome to my space</p>
+
+        <!-- Time card -->
+        <div class="time-card">
+            <div class="time-card-glow"></div>
+            <div class="time-header">
+                <svg class="clock-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"/>
+                    <polyline points="12 6 12 12 16 14"/>
+                </svg>
+                <span>目前時間</span>
+            </div>
+            <div class="time-display" id="time-display">
+                <span class="time-hours" id="hours">00</span>
+                <span class="time-separator">:</span>
+                <span class="time-minutes" id="minutes">00</span>
+                <span class="time-separator">:</span>
+                <span class="time-seconds" id="seconds">00</span>
+                <span class="time-ampm" id="ampm"></span>
+            </div>
+            <div class="date-display" id="date-display">Loading...</div>
+            <div class="timezone-display" id="timezone-display"></div>
+        </div>
+
+        <!-- Info cards -->
+        <div class="info-grid">
+            <div class="info-card">
+                <div class="info-icon">📅</div>
+                <div class="info-label">今日日期</div>
+                <div class="info-value" id="today-date">—</div>
+            </div>
+            <div class="info-card">
+                <div class="info-icon">🌤️</div>
+                <div class="info-label">星期</div>
+                <div class="info-value" id="day-of-week">—</div>
+            </div>
+            <div class="info-card">
+                <div class="info-icon">⏳</div>
+                <div class="info-label">今年已過</div>
+                <div class="info-value" id="year-progress">—</div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; <span id="footer-year"></span> James Sun. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
