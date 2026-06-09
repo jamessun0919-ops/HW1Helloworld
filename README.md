@@ -3,7 +3,7 @@
 > 一個具有即時時鐘、動態粒子背景與現代玻璃擬態設計的個人網站。
 
 <p align="center">
-  <a href="https://[jamessun0919-ops.github.io/L3-DIC1/](https://jamessun0919-ops.github.io/HW1Helloworld/)">
+  <a href="https://jamessun0919-ops.github.io/HW1Helloworld/">
     <img src="https://img.shields.io/badge/🔗_Live_Demo-點擊預覽-7c5cfc?style=for-the-badge" alt="Live Demo"/>
   </a>
 </p>
